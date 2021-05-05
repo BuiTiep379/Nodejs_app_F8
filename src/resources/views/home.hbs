@@ -1,1 +1,41 @@
-<h1>Hello World!!</h1>
+<div class="container">
+<h1 style="text-align: center;">User</h1>
+    <div class="mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Avatar</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each users}}
+                    <tr>
+                    <th scope="row">#</th>
+                    <td>{{this.avatar}}</td>
+                    <td>{{this.name}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.address}}</td>
+                    <td>{{this.phone}}</td>
+                    <td>{{this.gender}}</td>
+                    <td>{{this.role}}</td>
+                    <td>{{this.status}}</td>
+                </tr>
+                {{/each}}
+
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
