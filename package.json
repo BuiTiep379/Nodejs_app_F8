@@ -19,7 +19,12 @@
     "url": "https://github.com/BuiTiep379/Nodejs_app_F8/issues"
   },
   "lint-staged": {
-    "\"src/**/*.{js,json,scss}\"": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "homepage": "https://github.com/BuiTiep379/Nodejs_app_F8#readme",
   "devDependencies": {
